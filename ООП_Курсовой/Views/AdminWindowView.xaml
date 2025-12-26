@@ -1,0 +1,76 @@
+﻿<Window x:Class="ООП_Курсовой.Views.AdminWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Панель администратора"
+        Width="2560"
+        Height="1440"
+        Icon="D:\Yes\Уник\3 курс\5 семестр\Курсовая\Приложение\ООП_Курсовой\src\icon2.png"
+        WindowState="Maximized"
+        Background="#111111">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0"
+                Background="#000000">
+
+            <StackPanel Margin="20,40,20,20">
+
+                <Canvas>
+                    <Line X1="-30" Y1="0" X2="200" Y2="700" Stroke="#AD0000" StrokeThickness="1" />
+                    <Line X1="200" Y1="0" X2="-30" Y2="900" Stroke="#AD0000" StrokeThickness="1" />
+                    <Line X1="200" Y1="200" X2="-30" Y2="500" Stroke="#AD0000" StrokeThickness="1" />
+                </Canvas>
+
+                <TextBlock Text="Kaori Mau"
+                           Foreground="#FF4D00"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Margin="0,0,0,20"/>
+
+                <Button Content="Панель админа"
+                        Style="{StaticResource RoundedNavButton}"
+                        Command="{Binding AdminPanelCommand}"/>
+
+                <Button Content="Управление заказами"
+                        Style="{StaticResource RoundedNavButton}"
+                        Command="{Binding ViewOrdersCommand}"/>
+
+                <Button Content="Создание ролла"
+                        Style="{StaticResource RoundedNavButton}"
+                        Command="{Binding CreateRollCommand}"/>
+
+                <Button Content="Создание сета"
+                        Style="{StaticResource RoundedNavButton}"
+                        Command="{Binding CreateSetCommand}"/>
+
+                <Button Content="Просмотр пользователей"
+                        Style="{StaticResource RoundedNavButton}"
+                        Command="{Binding ViewUsersCommand}"/>
+
+                <Button Content="Все позиции меню"
+                        Style="{StaticResource RoundedNavButton}"
+                        Command="{Binding ViewMenuItemsCommand}"/>
+
+                <Button Content="Профиль"
+                        Style="{StaticResource RoundedNavButton}"
+                        Command="{Binding ProfileCommand}"/>
+
+                <Button Content="Выйти"
+                        Style="{StaticResource RoundedNavButton}"
+                        Command="{Binding LogoutCommand}"/>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Column="1" Background="#111111">
+            <ContentControl x:Name="AdminContent"/>
+        </Grid>
+    </Grid>
+</Window>
+

@@ -1,0 +1,143 @@
+<UserControl x:Class="ООП_Курсовой.Views.Pages.AdminCreateItemPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#111111">
+    <Grid Margin="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Создание нового ролла"
+                   Foreground="#FF4D00"
+                   FontSize="32"
+                   FontWeight="Bold"
+                   Margin="0,0,0,20"/>
+
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel Width="600">
+
+                <TextBlock Text="Категория"
+                           Foreground="White"
+                           Margin="0,0,0,5"/>
+                <ComboBox x:Name="CategoryComboBox"
+                          Height="32"
+                          Margin="0,0,0,15"
+                          Background="#000000"
+                          Foreground="White"
+                          BorderBrush="#FF4D00"
+                          BorderThickness="1.5"
+                          Padding="5"
+                          ItemsSource="{Binding Categories}"
+                          DisplayMemberPath="Name"
+                          SelectedValuePath="Id"
+                          SelectedValue="{Binding CategoryId}"/>
+
+                <TextBlock Text="Тип позиции"
+                           Foreground="White"
+                           Margin="0,0,0,5"/>
+                <ComboBox x:Name="ItemTypeComboBox"
+                            Height="32"
+                            Margin="0,0,0,15"
+                            Background="#000000"
+                            Foreground="White"
+                            BorderBrush="#FF4D00"
+                            BorderThickness="1.5"
+                            Padding="5"
+                            SelectedValuePath="Tag"
+                            SelectedValue="{Binding ItemType}">
+                    <ComboBoxItem Content="Ролл" Tag="roll"/>
+                    <ComboBoxItem Content="Сет"  Tag="set"/>
+                </ComboBox>
+
+
+                <TextBlock Text="Название ролла"
+                           Foreground="White"
+                           Margin="0,0,0,5"/>
+                <TextBox x:Name="NameTextBox"
+                         Style="{StaticResource RoundedTextBox}"
+                         Text="{Binding Name}"
+                         Margin="0,0,0,15"/>
+
+                <TextBlock Text="Описание"
+                           Foreground="White"
+                           Margin="0,0,0,5"/>
+                <TextBox x:Name="DescriptionTextBox"
+                         Style="{StaticResource RoundedTextBox}"
+                         Height="80"
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         Text="{Binding Description}"
+                         Margin="0,0,0,15"/>
+
+                <TextBlock Text="Цена, руб."
+                           Foreground="White"
+                           Margin="0,0,0,5"/>
+                <TextBox x:Name="PriceTextBox"
+                         Style="{StaticResource RoundedTextBox}"
+                         Text="{Binding Price}"
+                         Margin="0,0,0,15"/>
+
+                <TextBlock Text="Пищевая ценность (на 100 г)"
+                           Foreground="White"
+                           Margin="0,10,0,10"
+                           FontWeight="Bold"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <StackPanel Width="140" Margin="0,0,10,0">
+                        <TextBlock Text="Белки, г" Foreground="White" Margin="0,0,0,5"/>
+                        <TextBox x:Name="ProteinTextBox"
+                                 Style="{StaticResource RoundedTextBox}"
+                                 Text="{Binding Protein}"/>
+                    </StackPanel>
+
+                    <StackPanel Width="140" Margin="0,0,10,0">
+                        <TextBlock Text="Жиры, г" Foreground="White" Margin="0,0,0,5"/>
+                        <TextBox x:Name="FatTextBox"
+                                 Style="{StaticResource RoundedTextBox}"
+                                 Text="{Binding Fat}"/>
+                    </StackPanel>
+
+                    <StackPanel Width="140" Margin="0,0,10,0">
+                        <TextBlock Text="Углеводы, г" Foreground="White" Margin="0,0,0,5"/>
+                        <TextBox x:Name="CarbsTextBox"
+                                 Style="{StaticResource RoundedTextBox}"
+                                 Text="{Binding Carbs}"/>
+                    </StackPanel>
+
+                    <StackPanel Width="140">
+                        <TextBlock Text="Ккал" Foreground="White" Margin="0,0,0,5"/>
+                        <TextBox x:Name="CaloriesTextBox"
+                                 Style="{StaticResource RoundedTextBox}"
+                                 Text="{Binding Calories}"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <TextBlock Text="Изображение (путь/URL)"
+                           Foreground="White"
+                           Margin="0,10,0,5"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="ImageUrlTextBox"
+                             Style="{StaticResource RoundedTextBox}"
+                             Width="420"
+                             Text="{Binding ImageUrl}"
+                             Margin="0,0,10,0"/>
+                    <Button Content="Обзор..."
+                            Width="120"
+                            Height="32"
+                            Style="{StaticResource RoundedButton}"
+                            Command="{Binding BrowseImageCommand}"/>
+                </StackPanel>
+
+                <Button Content="Создать ролл"
+                        Margin="0,30,0,0"
+                        Height="45"
+                        FontSize="18"
+                        Style="{StaticResource RoundedButton}"
+                        Command="{Binding CreateItemCommand}"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
+

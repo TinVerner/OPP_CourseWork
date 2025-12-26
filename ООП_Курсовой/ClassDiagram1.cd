@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ООП_Курсовой.ViewModels.AdminCreateItemViewModel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>5gAAaEgAiQAiwiBEwIAACAYSAAoAEIAAmAAgACBAAoA=</HashCode>
+      <FileName>ViewModels\AdminCreateItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.AdminMenuItemsViewModel" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAACAAAQAFAwCMBRAAAgAAEACAAKkCFAAIAAIE=</HashCode>
+      <FileName>ViewModels\AdminMenuItemsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.AdminOrdersWindowViewModel" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAIEACAABAgSAAQgACgAAEQAECBAAAAACQAAE=</HashCode>
+      <FileName>ViewModels\AdminOrdersWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.AdminWindowViewModel" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>YAgACAAACAABABBa4IMCEAIQBAIAAAAAIAAgAAAAJIE=</HashCode>
+      <FileName>ViewModels\AdminWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.CartWindowViewModel" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BCAACMAAAAAQCEBAkCCCAAEAABAGQAAEAAAIAAgAAAA=</HashCode>
+      <FileName>ViewModels\CartWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.CheckoutWindowViewModel" Collapsed="true">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>wEAAAAQEEIASCABgBAkBICHBQAAQQBAAAgACAAADAAQ=</HashCode>
+      <FileName>ViewModels\CheckoutWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.CreateCustomRollWindowViewModel" Collapsed="true">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ZggASGACIYgQACVayCIKCCAglAoHABACIEEzgASBAIE=</HashCode>
+      <FileName>ViewModels\CreateCustomRollWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.CreateCustomSetWindowViewModel" Collapsed="true">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>xBgESFgCIJgEQCV6yCIACCEghIIGUIACIFk5QASBAIE=</HashCode>
+      <FileName>ViewModels\CreateCustomSetWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.CustomRollsWindowViewModel" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BQEAAEACAACBAABAgCUjYQAAjAAGAEACIkABAAIAIAE=</HashCode>
+      <FileName>ViewModels\CustomRollsWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.CustomSetsWindowViewModel" Collapsed="true">
+    <Position X="3.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAEAAEAAAACBAIBAwCYDUQAEhAAEAAACIkARAAIAIAA=</HashCode>
+      <FileName>ViewModels\CustomSetsWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.EditMenuItemWindowViewModel" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QgEUYHAAIVAgQARNCCAACQQCgIgwEAwogPEyAESEAiA=</HashCode>
+      <FileName>ViewModels\EditMenuItemWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.EditUserWindowViewModel" Collapsed="true">
+    <Position X="10.25" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAEAIEAAACgAAABQAAEAABAAAABAAAAKAAAQIEAEABk=</HashCode>
+      <FileName>ViewModels\EditUserWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.LoginViewModel" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgYAAAAAAAAAAABAgAACAIAAAAEABAACAAAQIACAAAA=</HashCode>
+      <FileName>ViewModels\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.MainWindowViewModel" Collapsed="true">
+    <Position X="8.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>RwQQOAABAEgCAABIsiSCAQAQkAIGAAIKAAAQQBAARIA=</HashCode>
+      <FileName>ViewModels\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.MenuRollsWindowViewModel" Collapsed="true">
+    <Position X="13.75" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BQEAAEAAAAABAABAgCQjYQAAiAAGAEACIkABGAIAIAA=</HashCode>
+      <FileName>ViewModels\MenuRollsWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.MenuSetsWindowViewModel" Collapsed="true">
+    <Position X="10" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAMAAEAAAAABAIBAgCQDQQAEgIAGEAACIkARAAIAIEA=</HashCode>
+      <FileName>ViewModels\MenuSetsWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.MyOrdersWindowViewModel" Collapsed="true">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAEAAgAAAAEAAABAgSQAAQAAgAAGAAECAACgAACAAAA=</HashCode>
+      <FileName>ViewModels\MyOrdersWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.OrderDetailsWindowViewModel" Collapsed="true">
+    <Position X="13.75" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BEAAAgYEEIASCABgACAAIEGAyBAQQAQADACgBACBAAA=</HashCode>
+      <FileName>ViewModels\OrderDetailsWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.ProfileViewModel" Collapsed="true">
+    <Position X="12" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>RAEACEQgKCAAAABQgBeCAQAABABHAAAKIAARIEAAIB0=</HashCode>
+      <FileName>ViewModels\ProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.RegistrationViewModel" Collapsed="true">
+    <Position X="1.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAUAAEAAACgEAABACCGAAAAAAAIAAACiAAAQIEAAIBk=</HashCode>
+      <FileName>ViewModels\RegistrationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.UsersAdminWindowViewModel" Collapsed="true">
+    <Position X="12.25" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgAQCIAACEAAABSyAMAQAAAJAAGAAAQMAAAAAaEAIE=</HashCode>
+      <FileName>ViewModels\UsersAdminWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvvmHelpers.BaseViewModel" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ООП_Курсовой.ViewModels.MenuDetailsWindowViewModel" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAABAAgAAAEAAAAAAAAAAAAiAAACAIAA=</HashCode>
+      <FileName>ViewModels\MenuDetailsWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
