@@ -42,7 +42,18 @@ public static class Cart
 
     public static ObservableCollection<CartItem> Items { get; } = new();
 
-    public static async Task AddAsync(MenuItem item)
+    public static Task AddAsync(MenuItem item) => AddAsync(item, LoadSetComponentsAsync);
+
+    private static async Task<List<MenuSetComponent>> LoadSetComponentsAsync(long setId)
+    {
+        using var repository = new MenuSetComponentRepository();
+        return await repository.GetBySetIdAsync(setId);
+    }
+
+    // Загрузчик передаётся явно, чтобы изолировать корзину от БД в юнит-тестах.
+    public static async Task AddAsync(
+        MenuItem item,
+        Func<long, Task<List<MenuSetComponent>>> loadSetComponents)
     {
         var existing = Items.FirstOrDefault(i => i.MenuItemId == item.Id);
         if (existing != null)
@@ -57,8 +68,7 @@ public static class Cart
             {
                 try
                 {
-                    using var setComponentRepo = new MenuSetComponentRepository();
-                    var components = await setComponentRepo.GetBySetIdAsync(item.Id);
+                    var components = await loadSetComponents(item.Id);
                     
                     if (components != null && components.Any())
                     {

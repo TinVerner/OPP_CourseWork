@@ -1,4 +1,4 @@
-﻿<Window x:Class="ООП_Курсовой.Views.EditUserWindowView"
+<Window x:Class="ООП_Курсовой.Views.EditUserWindowView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Редактирование пользователя"
@@ -6,7 +6,7 @@
         Height="800"
         Background="#111111"
         WindowStartupLocation="CenterOwner"
-        Icon="D:\Yes\Уник\3 курс\5 семестр\Курсовая\Приложение\ООП_Курсовой\src\icon2.png">
+        Icon="D:\Yes\University\4 course\7 семестр\ТПО\Лабы\OPP_CourseWork\src\icon2.png">
     
     <Grid Margin="40">
         <Grid.RowDefinitions>

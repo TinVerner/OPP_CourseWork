@@ -21,7 +21,10 @@ public partial class AdminWindowView : Window
 
         vm.RequestClose = () => this.Close();
         vm.OpenUsersRequested = () => { };
-        vm.OpenCreateItemRequested = () => { };
+        vm.OpenCreateItemRequested = () =>
+        {
+            NavigationService?.NavigateTo("AdminCreateItem");
+        };
         vm.OpenMenuItemsRequested = () => { };
         vm.OpenOrdersRequested = () => { };
         vm.OpenCreateRollRequested = () => 

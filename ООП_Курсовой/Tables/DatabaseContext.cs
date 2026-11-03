@@ -1,15 +1,10 @@
 ﻿using System.Configuration;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Npgsql;
 
 namespace ООП_Курсовой.Tables;
 
 public class DatabaseContext : DbContext
 {
-    private static NpgsqlDataSource? _dataSource;
-    private static readonly object _lock = new object();
-
     public DbSet<User> Users { get; set; }
     public DbSet<Role> Roles { get; set; }
     public DbSet<MenuItem> MenuItems { get; set; }
@@ -29,21 +24,11 @@ public class DatabaseContext : DbContext
             var db = ConfigurationManager.AppSettings["DbName"] ?? "KaoriMau";
             var cs = $"Host={host};Port={port};Database={db};Username=postgres;Password=1111";
 
-            if (_dataSource == null)
+            optionsBuilder.UseNpgsql(cs, npgsql =>
             {
-                lock (_lock)
-                {
-                    if (_dataSource == null)
-                    {
-                        var dataSourceBuilder = new NpgsqlDataSourceBuilder(cs);
-                        dataSourceBuilder.MapEnum<OrderStatus>("order_status");
-                        dataSourceBuilder.MapEnum<DeliveryType>("delivery_type");
-                        _dataSource = dataSourceBuilder.Build();
-                    }
-                }
-            }
-
-            optionsBuilder.UseNpgsql(_dataSource);
+                npgsql.MapEnum<OrderStatus>("order_status");
+                npgsql.MapEnum<DeliveryType>("delivery_type");
+            });
         }
     }
 
@@ -70,24 +55,6 @@ public class DatabaseContext : DbContext
 
         modelBuilder.HasPostgresEnum<OrderStatus>("order_status");
         modelBuilder.HasPostgresEnum<DeliveryType>("delivery_type");
-
-        var orderStatusConverter = new ValueConverter<OrderStatus, string>(
-            v => v.ToString().ToLowerInvariant(),
-            v => (OrderStatus)Enum.Parse(typeof(OrderStatus), v, true));
-
-        var deliveryTypeConverter = new ValueConverter<DeliveryType, string>(
-            v => v.ToString().ToLowerInvariant(),
-            v => (DeliveryType)Enum.Parse(typeof(DeliveryType), v, true));
-
-        modelBuilder.Entity<Order>()
-            .Property(o => o.Status)
-            .HasConversion(orderStatusConverter)
-            .HasColumnType("order_status");
-
-        modelBuilder.Entity<Order>()
-            .Property(o => o.DeliveryType)
-            .HasConversion(deliveryTypeConverter)
-            .HasColumnType("delivery_type");
 
     }
 }

@@ -1,4 +1,4 @@
-﻿using System.Collections.ObjectModel;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Input;
 using Microsoft.Win32;
@@ -80,7 +80,7 @@ public class CreateCustomSetWindowViewModel : BaseViewModel
 
     public string DisplayImageUrl => string.IsNullOrWhiteSpace(ImageUrl) ? DefaultImagePath : ImageUrl;
 
-    private const string DefaultImagePath = "D:\\Yes\\Уник\\3 курс\\5 семестр\\Курсовая\\Приложение\\ООП_Курсовой\\src\\Sets\\set.png";
+    private const string DefaultImagePath = "D:\\Yes\\University\\4 course\\7 семестр\\ТПО\\Лабы\\OPP_CourseWork\\src\\Sets\\set.png";
 
     private ObservableCollection<Category> _categories = new();
     public ObservableCollection<Category> Categories

@@ -1,4 +1,4 @@
-﻿using System.Collections.ObjectModel;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Input;
 using Microsoft.Win32;
@@ -162,7 +162,7 @@ public class EditMenuItemWindowViewModel : BaseViewModel
 
     public string DisplayImageUrl => string.IsNullOrWhiteSpace(ImageUrl) ? DefaultImagePath : ImageUrl;
 
-    private const string DefaultImagePath = "D:\\Yes\\Уник\\3 курс\\5 семестр\\Курсовая\\Приложение\\ООП_Курсовой\\src\\Rolls\\classic.png";
+    private const string DefaultImagePath = "D:\\Yes\\University\\4 course\\7 семестр\\ТПО\\Лабы\\OPP_CourseWork\\src\\Rolls\\classic.png";
 
     private string _itemType = "";
     public string ItemType
