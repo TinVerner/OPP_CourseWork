@@ -8,7 +8,7 @@
         Height="400"
         Width="350"
         WindowStartupLocation="CenterScreen"
-        Icon="D:\Yes\University\4 course\7 семестр\ТПО\Лабы\OPP_CourseWork\src\icon2.png"
+        Icon="../Assets/icon2.png"
         Background="#000000">
 
     <Grid>

@@ -7,7 +7,7 @@
         Title="Панель администратора"
         Width="2560"
         Height="1440"
-        Icon="D:\Yes\University\4 course\7 семестр\ТПО\Лабы\OPP_CourseWork\src\icon2.png"
+        Icon="../Assets/icon2.png"
         WindowState="Maximized"
         Background="#111111">
 

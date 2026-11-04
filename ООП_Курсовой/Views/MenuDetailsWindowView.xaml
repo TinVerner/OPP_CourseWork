@@ -7,7 +7,7 @@
         Background="#111111"
         Width="820"
         Height="520"
-        Icon="D:\Yes\University\4 course\7 семестр\ТПО\Лабы\OPP_CourseWork\src\icon2.png">
+        Icon="../Assets/icon2.png">
 
     <Border Margin="16"
             Background="#000000"

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using ООП_Курсовой.Tables;
+﻿using ООП_Курсовой.Tables;
 
 namespace KaoriMau.Tests;
 
-// Заглушка возвращает подготовленные данные или ошибку.
-// Также записывает обращения для проверки в тестах.
 internal class SetComponentsDouble
 {
     public List<MenuSetComponent> Components { get; set; } = new();

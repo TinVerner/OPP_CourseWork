@@ -11,7 +11,7 @@
         Height="800"
         Background="#111111"
         WindowStartupLocation="CenterScreen"
-        Icon="D:\Yes\University\4 course\7 семестр\ТПО\Лабы\OPP_CourseWork\src\icon2.png"
+        Icon="../Assets/icon2.png"
         ResizeMode="NoResize">
     <Window.Resources>
         <support:EnumToBoolConverter x:Key="EnumToBoolConverter"/>

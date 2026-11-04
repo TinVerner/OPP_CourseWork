@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:ООП_Курсовой.ViewModels"
-        Icon="D:\Yes\University\4 course\7 семестр\ТПО\Лабы\OPP_CourseWork\src\icon2.png"
+        Icon="../Assets/icon2.png"
         mc:Ignorable="d"
         Title="Registration"
         Height="800" Width="400"
